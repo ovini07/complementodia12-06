@@ -1,0 +1,21 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class atividade6 {
+
+	public static void main(String[] args) {
+	Scanner ler = new Scanner(System.in);
+	int soma = 0;
+
+	for(int i = 1; i <= 20; i++) {
+	System.out.print("Informe a idade (" + i + "/20): ");
+	int n = ler.nextInt();
+	soma += n; }
+	Double media = soma / 20.0;
+	System.out.println("A soma das idades é: " + soma);
+	System.out.println("A média das idades é: " + media);
+	ler.close();
+	}
+}
+
