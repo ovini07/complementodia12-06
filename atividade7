@@ -1,0 +1,25 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class atividade7 {
+
+	public static void main(String[] args) {
+    Scanner ler = new Scanner(System.in);
+    int soma = 0;
+    int maior = 0;       
+    for(int i = 1; i <= 20; i++) {
+    System.out.print("Informe a idade (" + i + "/20): ");
+    int n = ler.nextInt();
+    soma += n;
+    if (n > 18) {
+    maior++;
+	      }
+	            }  
+	 double media = soma / 20.0;
+    System.out.println("A soma das idades é: " + soma);
+    System.out.println("A média das idades é: " + media);
+    System.out.println("Pessoas maiores de 18 anos: " + maior);      
+       ler.close();
+	    }
+	}
